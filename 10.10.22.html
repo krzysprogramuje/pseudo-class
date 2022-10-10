@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aqua;
+            }
+            #kw1{
+
+            }
+            #kw2{
+             
+            }
+            p::first-line{
+                font-weight: bold;
+            }
+            p::after{
+                content: '*';
+            }
+            p::before{
+                content: '*';
+            }
+            span::before{
+                content: '#';
+            }
+            ::selection{
+                background: red;
+            }
+            p:nth-of-type(even){
+                color: yellow;
+            }
+            p:last-of-type{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="kw1">pojemnik</div>
+        <div id="kw2">pojemnik 2</div>
+        <p>Akapit <span>linia</span> 1<br>
+            Akapit linia 2
+        </p>
+        <p>Akapit linia 1<br>
+            Akapit linia 2
+        </p>
+        <p>Akapit linia 1<br>
+            Akapit linia 2
+        </p>
+    </body>
+</html>
